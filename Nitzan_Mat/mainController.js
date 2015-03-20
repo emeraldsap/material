@@ -1,6 +1,6 @@
 angular
-    .module('inputBasicDemo', ['ngMaterial', 'ngMessages'])
-    .controller('DemoCtrl', function($scope) {
+    .module('app', ['ngMaterial', 'ngMessages'])
+    .controller('mainController', function($scope) {
         $scope.user = {
             title: 'Developer',
             email: 'ipsum@lorem.com',
