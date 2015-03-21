@@ -1,5 +1,5 @@
 angular
-    .module('app', ['ngMaterial', 'ngMessages'])
+    .module('app', ['ngMaterial'])
     .controller('mainController', function($scope) {
         $scope.user = {
             title: 'Developer',
@@ -17,6 +17,6 @@ angular
     .config( function($mdThemingProvider){
         // Configure a dark theme with primary foreground yellow
         $mdThemingProvider.theme('docs-dark', 'default')
-            .primaryPalette('yellow')
+            .primaryPalette('green')
             .dark();
     });
