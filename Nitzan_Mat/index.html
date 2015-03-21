@@ -17,56 +17,27 @@
         <input ng-model="user.email" type="email">
     </md-input-container>
 </md-content>
-<md-content class="md-padding">
-    <form name="userForm">
-        <div layout layout-sm="column">
-            <md-input-container style="width:80%">
-                <label>Company (Disabled)</label>
-                <input ng-model="user.company" disabled>
-            </md-input-container>
-            <md-input-container flex>
-                <label>Submission Date</label>
-                <input type="date" ng-model="user.submissionDate">
-            </md-input-container>
-        </div>
-        <div layout layout-sm="column">
-            <md-input-container flex>
-                <label>First Name</label>
-                <input ng-model="user.firstName" placeholder="Placeholder text">
-            </md-input-container>
-            <md-input-container flex>
-                <label>Last Name</label>
-                <input ng-model="theMax">
-            </md-input-container>
-        </div>
-        <md-input-container flex>
-            <label>Address</label>
-            <input ng-model="user.address">
-        </md-input-container>
-        <div layout layout-sm="column">
-            <md-input-container flex>
-                <label>City</label>
-                <input ng-model="user.city">
-            </md-input-container>
-            <md-input-container flex>
-                <label>State</label>
-                <input ng-model="user.state">
-            </md-input-container>
-            <md-input-container flex>
-                <label>Postal Code</label>
-                <input ng-model="user.postalCode">
-            </md-input-container>
-        </div>
-        <md-input-container flex>
-            <label>Biography</label>
-            <textarea ng-model="user.biography" columns="1" md-maxlength="150"></textarea>
-        </md-input-container>
-    </form>
+<md-content class="md-padding" layout="row">
+    <div flex>
+        <md-button class="md-raised md-primary md-hue-1">Enter</md-button>
+        <md-button class="md-primary md-raised md-hue-2">Enter2</md-button>
+        <md-button class="md-accent md-raised">ACCENT</md-button>
+    </div>
+    <div flex>
+        <md-select placeholder="Pick" ng-model="someVal">
+            <md-option value="1">1</md-option>
+            <md-option value="2">2</md-option>
+        </md-select>
+        <ng-md-icon icon="account_balance" style="fill: red"></ng-md-icon>
+    </div>
 </md-content>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-aria/angular-aria.js"></script>
-    <script src="bower_components/angular-material/angular-material.js"></script>
-    <script src="mainController.js"></script>
+<md-progress-linear md-mode="indeterminate"></md-progress-linear>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/angular-material-icons/angular-material-icons.js"></script>
+<script src="mainController.js"></script>
 </body>
 </html>
